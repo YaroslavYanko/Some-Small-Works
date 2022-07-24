@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/stars.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.box {
+  top: 60%;
+  left: 45%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.sun {
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  margin-top: -200px;
+  transform: translate(-50% -50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* .polosa {
+  transition: 2s;
+  border: dotted white 2px;
+  top: 15%;
+  left: 50%;
+} */
+.borderSun {
+  border: dotted #ffb913 5px;
+  width: 100%;
+  height: 100%;
+  transition: 20s;
+  border-radius: 100%;
+}
+
+.box2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 25%;
+  top: 30%;
+}
+/* /////// */
+.container {
+  width: 100%;
+  margin-top: 50%;
+  position: absolute;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block {
+  width: 50%;
+  height: 20vh;
+  background-color: #031640;
+  margin-top: 10px;
+  border: solid white 1px;
+}
+.card {
+  margin-top: 25px;
+  width: 28%;
+  color: white;
+  position: absolute;
+  left: 40%;
+  background-color: rgba(2, 2, 2, 0.5);
+}
+
+.box3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 20%;
+  z-index: 9;
+}
+.box4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 28%;
+  top: 0px;
+  z-index: 9;
+  transition: 3s;
+  animation-name: orbita;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes orbita {
+  0% {
+    width: 70%;
+    top: 0px;
+    left: 170px;
+    z-index: 9;
+  }
+
+  25% {
+    top: 0px;
+    left: 10px;
+    width: 40%;
+    z-index: 9;
+  }
+  26% {
+    z-index: 0;
+  }
+  50% {
+    top: -50px;
+    left: 85%;
+    width: 50%;
+  }
+  60% {
+    z-index: 9;
+  }
+
+  100% {
+    width: 70%;
+    top: 0px;
+    left: 170px;
+  }
+}
+.moonEart {
+  position: relative;
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  top: 10%;
+}
+.box5 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  left: 80%;
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.slider {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 100%;
+}
+.sun2 {
+  position: relative;
+  width: 400px;
+  margin-left: 0;
+}
+@media (max-width: 1280px) {
+  .box {
+    margin-top: -100px;
+  }
+}
